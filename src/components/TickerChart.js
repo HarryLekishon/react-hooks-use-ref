@@ -12,6 +12,8 @@ function Ticker() {
     addPoint(canvasRef.current, prevPrice.current, price);
   }, [price]);
 
+  
+
   useEffect(() => {
     const id = setInterval(() => {
       setPrice((price) => ({
